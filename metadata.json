@@ -1,0 +1,5 @@
+{
+  "name": "Pharmacy Education Platform",
+  "description": "A comprehensive learning management system for pharmacy education featuring courses, quizzes, exams, and progress tracking. Implemented in React/TypeScript based on the provided specifications.",
+  "requestFramePermissions": []
+}
