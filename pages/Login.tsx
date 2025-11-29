@@ -24,7 +24,11 @@ export const Login: React.FC = () => {
       <div className="bg-white w-full max-w-md rounded-2xl shadow-xl p-8 space-y-8">
         <div className="text-center space-y-2">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-50 mb-4">
-            <span className="text-4xl">💊</span>
+            <img
+              src="/assets/icon.png"
+              alt="Our Pharmacy"
+              className="w-10 h-10 object-contain"
+            />
           </div>
           <h1 className="text-2xl font-bold text-gray-900">Our Pharmacy Education</h1>
           <p className="text-gray-500">Welcome back! Please login to continue.</p>
@@ -43,7 +47,7 @@ export const Login: React.FC = () => {
                 onChange={(e) => setFormData({ ...formData, username: e.target.value })}
               />
             </div>
-            
+
             <div className="relative">
               <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
               <input
@@ -67,9 +71,8 @@ export const Login: React.FC = () => {
           <button
             type="submit"
             disabled={isLoading}
-            className={`w-full py-3 rounded-xl text-white font-bold text-lg shadow-lg shadow-green-200 transition-all transform active:scale-95 ${
-              isLoading ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00B050] hover:bg-[#009945]'
-            }`}
+            className={`w-full py-3 rounded-xl text-white font-bold text-lg shadow-lg shadow-green-200 transition-all transform active:scale-95 ${isLoading ? 'bg-gray-400 cursor-not-allowed' : 'bg-[#00B050] hover:bg-[#009945]'
+              }`}
           >
             {isLoading ? 'Logging in...' : 'Login'}
           </button>
